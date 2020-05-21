@@ -7,6 +7,18 @@
     <groupId>com.hjy</groupId>
     <artifactId>offer-java-demo</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>6</source>
+                    <target>6</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 
     <dependencies>
@@ -15,6 +27,12 @@
             <artifactId>lombok</artifactId>
             <optional>true</optional>
             <version>1.16.14</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>29.0-jre</version>
         </dependency>
     </dependencies>
 
