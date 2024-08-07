@@ -94,7 +94,7 @@ public class MyServer {
             //bytebuffer写模式变为读模式
             byteBuffer.flip();
             while (byteBuffer.hasRemaining()){
-                System.out.println((char)byteBuffer.get());
+                System.out.print((char)byteBuffer.get());
             }
             byteBuffer.clear();
         }

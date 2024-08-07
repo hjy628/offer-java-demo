@@ -35,7 +35,7 @@ public class MyClient {
             while ((count = socketChannel.read(byteBuffer))>0){
                 byteBuffer.flip();
                 while (byteBuffer.hasRemaining()){
-                    System.out.println((char)byteBuffer.get());
+                    System.out.print((char)byteBuffer.get());
                 }
                 send2Server("say hi".getBytes());
                 byteBuffer.clear();
